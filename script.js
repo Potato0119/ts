@@ -22,6 +22,22 @@ function sselect(){
     document.getElementById('text').value=data[obj]
 }
 
+function isMobileDevice() {
+  let mobileDevices = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone']
+  for (var i = 0; i < mobileDevices.length; i++) {
+      if (navigator.userAgent.match(mobileDevices[i])) {
+        return true;
+      }
+  }
+  return false
+}
+
+if (isMobileDevice()) {
+    Swal.fire({"title":"<p style=font-size:25px;>你正在使用手機(或行動裝置)瀏覽</p>",html: '<p style=font-size:25px;>建議換成電腦,不然排版會有問題</p>',confirmButtonText:'好',})
+} else {
+    console.log("not mobile device");
+}
+
 window.addEventListener('DOMContentLoaded', (event) => {
     var len =data["len"]
     for (let i = 1; i <= len; i++) {
