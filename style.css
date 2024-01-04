@@ -1,124 +1,241 @@
 /* css reset ...start */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-/* css reset ...end */ 
-@font-face{
-    font-family: Roboto;
-    src: url("../other/Roboto-Bold.ttf");
+/* css reset ...end */
+@font-face {
+  font-family: Roboto;
+  src: url("../other/Roboto-Bold.ttf");
 }
-body{
-    font-family: Roboto;
-    background: rgb(255, 246, 204);
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-weight: bold;
+body {
+  font-family: Roboto;
+  background: rgb(255, 246, 204);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: bold;
 }
-.title{
-    font-size: 50px;
-    position:absolute;
-    transform:translate(-50%,0%);
-    top:20px;
-    left:50%;
+.title {
+  font-size: 50px;
+  position: absolute;
+  transform: translate(-50%, 0%);
+  top: 20px;
+  left: 50%;
 }
-.img1{
-    width: 50px;
-    height: 50px;
-    position:absolute;
-    transform:translate(-50%,0%);
-    top:20px;
-    left:38vw;
+.img1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(-50%, 0%);
+  top: 20px;
+  left: 38vw;
 }
-.img2{
-    width: 50px;
-    height: 50px;
-    position:absolute;
-    transform:translate(-50%,0%);
-    top:20px;
-    left:62vw;
+.img2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(-50%, 0%);
+  top: 20px;
+  left: 62vw;
 }
-.text{
-    font-size: 30px;
-    margin: 0;
-    padding:0;
-    margin-top: 50px;
-    text-align: center;
-    height: 100px;
-    width: 95%;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    font-weight: bolder;
-    border: 3px solid #000;
-    border-radius: 30px;
-    background-color:#fefefe;
+.text {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  text-align: center;
+  height: 100px;
+  width: 95%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  font-weight: bolder;
+  border: 3px solid #000;
+  border-radius: 30px;
+  background-color: #fefefe;
 }
 
-.next{
-    font-size: 30px;
-    margin: 0;
-    padding:0;
-    font-weight: bold;
-    padding: 10px;
-    border: 3px solid #000;
-    border-radius: 30px;
-    cursor: pointer;
-    width: 150px;
-    height: 70px;
-    background-color:#fefefe;
+.next {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 150px;
+  height: 70px;
+  background-color: #fefefe;
 }
-.select{
-    font-size: 30px;
-    margin: 0;
-    padding:0;
-    font-weight: bold;
-    padding: 10px;
-    border: 3px solid #000;
-    border-radius: 30px;
-    cursor: pointer;
-    width: 150px;
-    height: 70px;
-    background-color:#fefefe;
+.select {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 150px;
+  height: 70px;
+  background-color: #fefefe;
 }
-.select option{
-    font-size: 16px;
+.select option {
+  font-size: 16px;
+}
+.discord {
+  position: relative;
+  width: calc(20vw + 10px);
+  height: calc(3vw + 10px);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border: 0.2vw solid #000;
+  border-radius: 10000px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transform: translate(0%, -50%);
+  font-family: sans-serif;
+}
+
+.discord img {
+  display: flex;
+  width: 3vw;
+  width: 3vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.discord p {
+  display: flex;
+  font-size: 1.5vw;
+  margin-left: 0.5vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+.discord:hover {
+  background-color: #5865f2;
+  color: #fff;
 }

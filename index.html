@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta HTTP-EQUIV="pragma" CONTENT="no-cache"> 
-    <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
-    <meta HTTP-EQUIV="expires" CONTENT="0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="expires" content="0" />
     <title>廢話機器人</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="style.css"/>
-    <link data-default-icon="icon.png" data-badged-icon="icon.png" rel="shortcut icon" href="icon.png">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      data-default-icon="icon.png"
+      data-badged-icon="icon.png"
+      rel="shortcut icon"
+      href="icon.png"
+    />
+  </head>
+  <body>
     <p class="title">廢話機器人</p>
 
     <center>
-        <input style="margin-top:100px;" class="text" id="text"/>
-        <button style="margin-top:10px;" onclick="summon()" class="next">再來一句</button><br>
-        <select style="margin-top:10px;text-align:center;" class="select" id="sel"><option style="text-align:center;" selected disabled>請指定</option></select>
+      <input style="margin-top: 100px" class="text" id="text" />
+      <button style="margin-top: 10px" onclick="summon()" class="next">
+        再來一句</button
+      ><br />
+      <select
+        style="margin-top: 10px; text-align: center"
+        class="select"
+        id="sel"
+      >
+        <option style="text-align: center" selected disabled>請指定</option>
+      </select>
+
+      <a
+        href="https://discord.com/api/oauth2/authorize?client_id=952074216377831444&permissions=8&scope=bot+applications.commands"
+        target="_blank"
+        class="discord"
+        style="margin-top: 41px"
+      >
+        <img src="discord.png" />
+        <p>使用Discord廢話機器人<br />功能更齊全</p>
+      </a>
     </center>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
